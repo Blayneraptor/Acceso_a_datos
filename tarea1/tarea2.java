@@ -2,18 +2,14 @@ import java.io.*;
 
 public class tarea2 {
     public static void main(String[] args) {
-        // Verifica si el nombre del archivo se pasó como argumento
-        if (args.length != 1) {
-            System.out.println("Por favor, proporcione el nombre del archivo como argumento.");
-            return;
-        }
+        // Cambia esta ruta según la ubicación de datos.txt
+        String nombreFichero = "C:\\Users\\Blayne\\OneDrive\\DIGITECH\\2º Curso DAM\\ACCESO A DATOS\\Acceso_a_datos\\tarea1\\datos.txt"; 
 
-        String nombreFichero = args[0];
         File archivo = new File(nombreFichero);
 
-        // Verifica si el archivo existe
+        // Verificar si el archivo existe
         if (!archivo.exists()) {
-            System.out.println("El archivo no existe: " + nombreFichero);
+            System.out.println("El archivo no se encuentra: " + nombreFichero);
             return;
         }
 
@@ -21,14 +17,12 @@ public class tarea2 {
             String linea;
             int contadorPalabras = 0;
 
-            // Lee el archivo línea por línea
             while ((linea = lector.readLine()) != null) {
-                // Divide cada línea en palabras utilizando espacios en blanco
+                // Dividimos la línea en palabras usando espacios en blanco como delimitadores
                 String[] palabras = linea.split("\\s+");
                 contadorPalabras += palabras.length;
             }
 
-            // Muestra el número total de palabras
             System.out.println("El archivo tiene un total de " + contadorPalabras + " palabras.");
         } catch (FileNotFoundException e) {
             System.out.println("El archivo no se encuentra: " + nombreFichero);
