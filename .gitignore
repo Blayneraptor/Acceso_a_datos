@@ -1,0 +1,9 @@
+# Ignorar la carpeta .git
+.git/
+
+# Ignorar archivos temporales de VS Code
+.vscode/
+
+# Ignorar archivos de sistema como Thumbs.db o .DS_Store
+Thumbs.db
+.DS_Store
