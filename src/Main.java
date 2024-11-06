@@ -22,7 +22,7 @@ public class Main {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(query);
 
-            // Mostrar los registros obtenidos
+            // Mostrar los registros obtenidos.
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String nombre = rs.getString("nombre");
