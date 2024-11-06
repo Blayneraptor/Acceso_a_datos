@@ -1,6 +1,6 @@
-# Java MySQL JDBC Example
+# Java MySQL JDBC
 
-Este programa en Java realiza las siguientes acciones:
+Escribe un programa en Java que realice las siguientes acciones:
 1. Conéctate a una base de datos MySQL utilizando JDBC.
 2. Consulta todos los registros de una tabla llamada `usuarios`.
 3. Muestra por consola los resultados obtenidos.
