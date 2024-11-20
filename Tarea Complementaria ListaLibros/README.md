@@ -1,6 +1,6 @@
 # Ejercicio: Creación de base de datos con Java
 
-## Descripción (MÁS ABAJO ESTÁ LA CREACIÓN DE LA TABLA, ETC...)
+## Descripción (MÁS ABAJO ESTÁ LA CREACIÓN DE LA TABLA DESDE SHELL SI FUERA NECESARIO...)
 
 Usando Java, se pide crear una base de datos llamada `listaLibros` que contenga una tabla `libros` con los siguientes atributos:
 
@@ -24,4 +24,25 @@ El programa debe permitir las siguientes operaciones:
 2. **Consultar datos**: Consultar todos los libros registrados en la base de datos.
 3. **Actualizar datos**: Actualizar los detalles de un libro específico por su `id`.
 4. **Eliminar datos**: Eliminar un libro de la tabla `libros` por su `id`.
+
+
+```sql
+
+CREATE DATABASE listaLibros;
+USE listaLibros;
+
+CREATE TABLE autor (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_autor VARCHAR(255),
+    fecha VARCHAR(50)
+);
+
+CREATE TABLE libros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255),
+    autor_id INT,
+    ano_publicacion INT,
+    FOREIGN KEY (autor_id) REFERENCES autor(id)
+);
+```
 
