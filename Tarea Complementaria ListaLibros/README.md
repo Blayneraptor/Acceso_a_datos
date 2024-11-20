@@ -1,6 +1,6 @@
 # Ejercicio: Creación de base de datos con Java
 
-## Descripción
+## Descripción (MÁS ABAJO ESTÁ LA CREACIÓN DE LA TABLA, ETC...)
 
 Usando Java, se pide crear una base de datos llamada `listaLibros` que contenga una tabla `libros` con los siguientes atributos:
 
