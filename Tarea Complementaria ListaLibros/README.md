@@ -1,4 +1,5 @@
-# Ejercicio: Creación de base de datos con Java
+# Tarea complementaria: Herramientas de mapeo Objeto-Relacional. JPA 💻
+
 
 ## Descripción (MÁS ABAJO ESTÁ LA CREACIÓN DE LA TABLA DESDE SHELL SI FUERA NECESARIO...)
 
