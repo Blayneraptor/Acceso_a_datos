@@ -18,12 +18,12 @@ public class Main {
 
             // Crear un nuevo cliente
             Cliente cliente = new Cliente();
-            cliente.setNombre("Jose Couso");
-            cliente.setEmail("jose.couso@example.com");
+            cliente.setNombre("Jose Couso2");
+            cliente.setEmail("jose.couso2@example.com");
 
             // Crear un pedido para el cliente
             Pedido pedido = new Pedido();
-            pedido.setNumeroPedido("PED-001");
+            pedido.setNumeroPedido("PED-002");
             pedido.setTotal(150.75);
 
             // Asociar el pedido al cliente
