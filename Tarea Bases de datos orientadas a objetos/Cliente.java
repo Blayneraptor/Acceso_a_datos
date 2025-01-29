@@ -1,33 +1,14 @@
-import java.util.ArrayList;
 
-public class Cliente {
-    private String nombre;
+
+class Cliente {
     private int id;
-    private ArrayList<Libro> librosPrestados;
+    private String nombre;
 
-    public Cliente(String nombre, int id) {
-        this.nombre = nombre;
+    public Cliente(int id, String nombre) {
         this.id = id;
-        this.librosPrestados = new ArrayList<>();
+        this.nombre = nombre;
     }
 
-    public void prestarLibro(Libro libro) {
-        librosPrestados.add(libro);
-    }
-
-    public void devolverLibro(Libro libro) {
-        librosPrestados.remove(libro);
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public ArrayList<Libro> getLibrosPrestados() {
-        return librosPrestados;
-    }
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
 }

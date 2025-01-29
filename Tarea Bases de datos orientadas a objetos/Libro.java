@@ -1,18 +1,20 @@
-import java.util.Date;
-
-public class Libro {
+class Libro {
+    private int id;
     private String titulo;
     private String autor;
-    private int id;
     private String genero;
-    private Date fechaDevolucionEsperada;
-
-    public Libro(String titulo, String autor, int id, String genero) {
+    
+    public Libro(int id, String titulo, String autor, String genero) {
+        this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.id = id;
         this.genero = genero;
-        this.fechaDevolucionEsperada = null;
+    }
+    
+    // Getters y setters para cada propiedad
+    
+    public int getId() {
+        return id;
     }
 
     public String getTitulo() {
@@ -23,19 +25,7 @@ public class Libro {
         return autor;
     }
 
-    public int getId() {
-        return id;
-    }
-
     public String getGenero() {
         return genero;
-    }
-
-    public Date getFechaDevolucionEsperada() {
-        return fechaDevolucionEsperada;
-    }
-
-    public void setFechaDevolucionEsperada(Date fechaDevolucionEsperada) {
-        this.fechaDevolucionEsperada = fechaDevolucionEsperada;
     }
 }
